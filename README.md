@@ -26,7 +26,25 @@ All products of the Throughput Annotation Project are licensed under an [MIT Lic
 
 ## How to use this repository
 
-A description of the files and directory structure in the repository.
+This project is intended to function as an RMarkdown file that will render the paper manuscript for publication.  To faciliate editing and the use of continuous integration tools we use a `Makefile` as well as a bash script that will render the RMarkdown file to an HTML document, suitable for viewing in web applications.  The ultimate `publication` branch of this repository will be used for rendering to PDF/DOCX format for submission to publisher.
+
+### Render RMarkdown to `html`
+
+To render the RMarkdown document use the Makefile included with this respository:
+
+```
+make content
+```
+
+The Makefile also can be used to clean supporting files out or the repository (`make clean`), and can render both the paper and a version of the paper (using `knitr::purl()`) that consists only of the R code (`make localbuild`) to ease debugging.
+
+### Continuous rendering during editing
+
+We use a bash script (`autobuild.sh`) to monitor changes in the RMarkdown file.  This script checks the current timestamp of the Rmd file against the last saved version.  If there is a difference between the two it will re-build the RMarkdown document.  This allows a user to see their changes almost instantly, without having to stop their writing process.
+
+```
+bash autobuild.sh paleomultivar.Rmd
+```
 
 ### Workflow Overview
 
