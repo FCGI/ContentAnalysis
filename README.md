@@ -1,5 +1,5 @@
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![NSF-XXXXXXX](https://img.shields.io/badge/NSF-1550913-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1550913) [![NSF-XXXXXXX](https://img.shields.io/badge/NSF-1550855-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1550855)
+[![NSF-1550913](https://img.shields.io/badge/NSF-1550913-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1550913) [![NSF-1550855](https://img.shields.io/badge/NSF-1550855-blue.svg)](https://nsf.gov/awardsearch/showAward?AWD_ID=1550855)
 
 # Flyover Country Cartographic Content Analysis
 
@@ -48,7 +48,7 @@ bash autobuild.sh paleomultivar.Rmd
 
 ### Workflow Overview
 
-Th project uses a hand coded [XLSX]() file as the basis for analysis.  The XLSX file is structured in such a way as to facilitate hand-encoding.  This file is then processed into CSV files using an R script, saved in the [R]() folder.
+Th project uses a hand coded [XLSX](data) file as the basis for analysis.  The XLSX file is structured in such a way as to facilitate hand-encoding.  This file is then processed into CSV files using an R script, saved in the [R]() folder.
 
 Statistical analysis and figure generation is then performed within an [RMarkdown document](paleomultivar.Rmd) in the home directory of this repository.
 
