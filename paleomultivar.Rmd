@@ -1,0 +1,355 @@
+---
+title: Multivariate and Spatiotemporal Visualization
+author:
+  - affiliation: University of Wisconsin - Madison
+    name: Robert E. Roth
+  - affiliation: University of Wisconsin - Madison
+    name: Ross Thorn
+  - affiliation: University of Wisconsin - Madison
+    name: Simon J Goring
+  - affiliation: University of Minnesota
+    name: Shane Loeffler
+  - affiliation: University of Minnesota
+    name: Amy Myrbo
+  - affiliation: University of Wisconsin - Madison
+    name: Jack W. Williams
+date: "August 21, 2019"
+bibliography: styles/multivis.bib
+output:
+  html_document:
+    code_folding: show
+    fig_caption: yes
+    keep_md: yes
+    self_contained: yes
+    theme: readable
+    toc: yes
+    toc_float: yes
+dev: svg
+highlight: tango
+keywords: visualization, paleoecology, science communication, multivariate representation, spatiotemporal representation, Neotoma Paleoecology Database
+abstract: paleoecological data are complicated and need to be displayed.
+csl: styles/elsevier-harvard.csl
+---
+
+```{r loaddata, results = 'hide', messages = FALSE, warnings = FALSE}
+source('R/load_packages.R', echo = FALSE)
+ 
+model_out <- convert_excel('data/excel/Neotoma_Analysis.xlsx',
+                           sheets = list(
+                             list(sheet = 'Representation_DataType',
+                                  range = 'A2:Z706'),
+                             list(sheet = 'Figure_Representation',
+                                  range = 'A2:N628'),
+                             list(sheet = 'Visualization Representation')))
+
+refs <- pull_references(model_out[[1]])
+
+```
+
+## Introduction: The case for visualization in ecological informatics
+
+### The case for ecological informatics.
+
+Here, we report on a case study analysis of visualization practices and trends in paleoecology. Now more than ever, our understanding of the Earth, its processes, and its ecosystems is driven by data (citations). Increasingly, researchers in ecology and related Earth sciences are contributing their primary research data to common, open repositories (e.g., Palmer et al. 2005, Michener 2006, Hampton et al. 2013), improving the reproducibility and provenance of single site studies, enabling comparative studies and global meta-analyses, and ultimately opening new lines of scientific inquiry about our changing planet. Accordingly, dozens of community-curated ecology and Earth systems databases and services now exist (see Uhen et al. 2013 for a review), with public efforts to further integrate and maximize these resources coordinated through the NSF Geoinformatics and EarthCube programs. Arguably—and thanks in large part to these efforts to-date—the bottleneck for ecological informatics is no longer with community buy-in for sharing primary data or computational solutions to index and serve these data, but instead in the dearth of innovative and time-tested techniques to generate new insight into ecological processes and fully harness the potential of these data for research, education, and policy (Peters et al. 2014).
+
+### The case for visualization
+
+Visualization is a critical method for distilling meaning from complex data, drawing on human perceptual and cognitive faculties to discover nuanced patterns and anomalies that statistical and computational methods often miss (Shneiderman 2014). When designed well, visualizations intuitively and succinctly communicate a large amount of complex information in a small amount of space (Tufte 1983), facilitating education and outreach of scientific results. Use of charts, maps, and other visualization techniques has a long history in ecology and the Earth sciences (e.g., Banchoff 1990, DiBiase 1990, Huntley 1990), with interactive and web-enabled visualizations increasingly common to support ideation and knowledge construction (e.g., Parr et a. 2007, Gonzalez et al. 2009, Steinger & Hay 2009, Boyd & Foody 2011). Further, visualization plays a fundamental role for collaborative data science, first providing visual summaries of the contributed contents for quality assurance and then serving as an interactive front-end for acquiring task relevant data (cite Simon?). Finally, when rendered on mobile devices, visualizations bring scientific datasets into the field, contextualizing and enriching ecology research as it is underway and situating Earth science education using the landscape as a classroom (Roth et al. 2018). Despite this promise of visualization for ecology and the Earth sciences, most work on informatics to-date has focused on data collection and computational resources, with connections to cartographic design, information visualization, and visual analytics lagging substantially behind.
+
+### What is unique to paleoecology?
+We contribute to visualization research in ecological informatics through a case study in paleoecology using the Neotoma database. Paleoecology describes the reconstruction of past ecosystems and environments using fossil and seed records, lake sediment and ice cores, tree rings, etc., to understand historic and current ecological processes as well as predict and intervene upon potential future conditions (Willis & Birks 2006, Jackson & Hobbs 2009). Launched in 2009, the Neotoma database is an open access, community-curated data resource providing site level paleoecological records spanning the Quaternary and Pliocene (Williams et al. 2018). Neotoma paleoecological data present a useful case study for assessing current trends in big data visualization broadly because its constituent data sources altogether exhibit many characteristics and complexities present only in part in other domain data repositories (see Brewer et al. 2012 for a discussion). First, paleoecological data are spatiotemporal, collected at specific geographic sites and including prehistoric accounts spanning tens of thousands of years. Second, paleoecological data are multivariate, containing separate facets for different flora and fauna taxa and associated environmental attribute proxies. Finally, paleoecological data are uncertain due to sparse and ad hoc community sampling, limitations in contemporary collection and analysis techniques, and inherent ambiguity in prehistoric ecosystems that cannot be observed directly. Thus, trends, gaps, and opportunities identified from critical evaluation of paleoecological visualization are potentially transferable to many other visualization contexts (Sedlmair et al. 2012, Roth et al. 2017).
+
+### Road Map
+Specifically, we completed a visual content analysis of 706 charts, maps, and other visualizations included pin publications from Neotoma contributed projects in order to identify gaps in current solutions based on existing visualization design tenets. We also coded N web visualizations and mobile apps that draw on the Neotoma API to seek opportunities for innovative visualization. The next section reviews visualization tenets for ecological informatics, drawing from both established and emerging design guidance in visualization and related fields. We then describe our approach to analyze the collected visuals by four dimensions: data type, representation, uncertainty, and interactivity (web and mobile only). We present results and discussion in the fourth section, starting first with static graphics in scientific publications and comparing these practices to the reviewed web and mobile visualizations.  We conclude by identifying X future directions for visualization of (paleo)ecological data. The results of this study are relevant to ecological informatics and paleoecology specifically, as well as the increasingly interrelated domains of data science, cartography, and Earth science.
+
+## Background: Visualization design considerations
+
+Visualization is a cognitive process of reasoning with mental images, a graphic product representing abstract data through increasingly interactive and digital media, and an interdisciplinary field tying together scholarship in art, cartography, computer science, graphic design, psychology, statistics, and visual analytics, among others (MacEachren 1995, Ware 2004, Ward et al. 2010, Munzner 2014). Visualization also is lauded as an important method for scientific reasoning and discovery about complex problems (Tukey 1980, McCormick et al. 1989, Thomas et al. 2005), leveraging the eye’s substantial sensory bandwidth to the brain (Marr 1982) and enabling the manipulation of visual artifacts to externalize and enhance cognition (Hollan et al. 2000). Visualization often is collapsed with other aspects of data collection, assembly, storage, retrieval, and analysis and described as x-informatics for specific science domains (Gahegan 2018), such as ecoinformatics or paleoecoinformatics here (Brewer 2012).
+
+Domain-specific informatics—and therefore domain-specific visualization best practices—primarily differ by their data characteristics. For instance, real-time ecoinformatics relies on remote sensing technologies that stream data in a raster format offering continuous spatial coverage and consistent temporal coverage, albeit with interruptions due to weather, etc. In contrast, paleoecoinformatics primarily uses field samples collected at specific sites presented as vector points with discrete spatial coverage and vertical depth standing for time. Unifying domains, Shneiderman (1996) describes seven basic data types for visualization (see Table 1 for definitions): (1) one-dimensional, (2) two-dimensional (here, “spatial”), (3) three-dimensional, (4) temporal, (5) multi-dimensional (here, “multivariate”), (6) tree, and (7) network. Each data type then has a set of recommended visualization techniques (Heer et al. 2010). For instance, visualization techniques for temporal data include common timelines and calendars as well as more complex techniques like animation, cartograms, coxcombs, small multiples, space-time cubes, and stream graphs (see Andrienko & Andrienko 2006, Kraak 2014). While not all datasets fit neatly into these categories, and transformations can be made between data types, the Shneiderman taxonomy offers a useful starting point for discussing different visualization techniques.
+
+There are potentially limitless arrays of visualization techniques that can be paired with each of Shneiderman’s (1996) seven data types (see Heer et al. 2010, for example). However, all techniques reduce down to a small set of visual variables, or the building blocks of a graphic representation that can be manipulated to encode information (White 2017). The visual variables were first proposed by Bertin (1967|1983), a French cartographer recognized as one of the founding scholars of information visualization, and form an organizing foundation for visual semiotics, or the study of graphic sign systems (e.g., street signs, map symbols). Originally called ‘retinal’ variables, the visual variables are the dimensions of a visual scene that human vision processes pre-attentively. Bertin originally identified seven visual variables that can be used in a visualization: (1) location, (2) size, (3) shape, (4) color hue, (5) color value (shading), (6) orientation, and (7) texture. Additions have been proposed by Morrison (1974)—(8) color saturation and (9) arrangement—and MacEachren (1992)—(10) fuzziness, (11) resolution, and (12) transparency (Table 1).
+
+Visual semiotics and the visual variables are helpful not just because they articulate the design space available for visualization, but also because a syntactics has been developed to inform when certain visual variables should be used over others (Bertin 1967|1983, Mackinlay 1986). For instance, some visual variables imply an ordinal, ranked relationship (e.g., color value) or even quantitative differences (e.g., size) when varied, whereas others imply no ranking with variations seen only as different (e.g., color hue, shape) (for a complete discussion, see MacEachren 1995). Thus, using color hue (e.g., ‘rainbow’ color schemes) or shape for numerical data as well as color value or size for categorical data actually impedes the reading and comprehension of a visualization, and thus should be avoided for clarity of communication. Multiple visual variables can be manipulated in a visualization at once, either to redundantly encode a single attribute or to encode different dimensions within a single data type (e.g., space vs. time, each multivariate dimension), resulting in a bivariate or multivariate visualization (Roth 2017).
+
+Bivariate and multivariate applications of the visual variables are particularly important for representing data and its uncertainty together. All data contain some degree of uncertainty (Zuk & Carpendale 2006, Zuk 2008), with uncertainties compiling and multiplying in community-curated data resources like the Neotoma database. Uncertainty is a multifaceted concept and includes accuracy/error in space, time, and attributes, precision of collected data, and various measures of trustworthiness (e.g., completeness, consistency, lineage, currency, credibility, subjectivity, interrelatedness) (MacEachren et al. 2005; Table 1). Increasingly, design studies recommend visualizing quantifiable uncertainties so that researchers, educators, and policymakers can understand the limitations of presented information and make better informed conclusions (Skeels et al. 2009, Speigelhalter et al. 2011). Visualizations strategies for both information and its uncertainty can be adjacent (separate displays) or coincident (integrated), with coincident visualizations representing uncertainty either extrinsically (as a separate layer atop the visualization) or intrinsically (modifying the original visualization) (Kinkeldey et al. 2014). Further, the visual variables also differ in how effective they evoke a visual metaphor of uncertainty, with fuzziness the most intuitive visual variable for representing uncertainty followed by arrangement, color value, size, and transparency (MacEachren et al. 2012).
+
+Finally, visualization transitions from a product to a process when graphics are interactive and dynamic, allowing users to create new visualizations as they reason about the underlying data (MacEachren 1994). For instance, Banchoff (1990) recommends interactive filtering, reprojection in multivariate space, and sequencing through time as three interactive methods particularly useful for making sense of paleoecological data. While not common in scientific publications, interactive visualizations are increasingly common in ecoinformatics both to serve and explore data, and can be particularly useful when viewed on mobile devices in education and outreach settings. Following Bertin’s work on the visual variables, a number of scholars have proposed the fundamental building blocks of an interaction (e.g., Becker & Cleveland 1987, Dykes 1997, Crampton 2002, Yi et al. 2007). Such interaction primitives include operators that alter the overall visualization design (e.g., arrange, reexpress, resymbolize, sequence), that alter the viewpoint to the visualization (e.g., pan, zoom, reproject), and that alter specific features within the visualization (e.g., calculate, filter, overlay, search, retrieve) (Roth 2013; Table 1).
+
+## Method: Content analysis of paleoecological visualizations
+
+### Method justification.
+Visual content analysis describes the systematic interpretation of a coherent corpus of artifacts by their constituent visual elements (Rose 2012). Content analysis is a common social science method for rigorous identification of themes, trends, and outliers in secondary sources such as text documents and transcripts (Suchan & Brewer 2000), and visual approaches have been modified for ‘design analysis’ in cartography and related fields to expose the designer’s intentions and authorship of the visualization (e.g., Kent & Vujakovic 2009, Slocum et al. 2011, Muehlenhaus 2012, Kelly 2015, White et al. 2017, Roth et al. under review). Increasingly, visual content analysis examines the graphic representation, the data underlying the representation, and visual interfaces for manipulating the data through the representation (e.g., Roth et al. 2015, Fish & Calvert 2016, Degbelo & Kauppinen 2018). Visual content analysis provides a benchmark for contemporary design practices and, when compared to empirically-derived best practices for visualization design, reveals domain-specific gaps and opportunities for future visualization research and practice (Muehlenhaus 2011).
+
+### Case study.
+We collected our sample of paleoecological charts, maps, and other visualizations from publications describing projects using the Neotoma database. We focused on Neotoma for several reasons (see Williams et al. 2018 for a review). First, Neotoma is a community-curated data resource that organizes a range of valuable constituent databases in paleoecology, such as the African, Chinese, Europe, Japanese, Latin American, North American, and Siberian and Russian Far East Pollen Databases, centralized efforts such as FAUNMAP and NANODe, university repositories such as the Academy of Natural Sciences of Drexel University and the North Dakota State University NANODe, and Neotoma-specific collections such as the Neotoma Midden Database and the Neotoma Testate Amoebae Database. Second, Neotoma has a flexible data model specification that permits spatiotemporal and multivariate dimensions, key visualization considerations for paleoecoinformatics. Third, Neotoma has robust governance and validation processes, drawing out and documenting sources of uncertainty while overall improving the quality of its contents. Finally, Neotoma has an open API that enables third party visualization on the web and mobile devices, such as our own Flyover Country mobile application (Loeffler et al. submitted). Thus, design analysis of existing uses of the Neotoma API directly informed development of Flyover Country.
+
+### Sample
+
+```{r samplesummary, echo=TRUE, results = 'hide', messages = FALSE}
+
+paper_count <- model_out[[1]] %>%
+  distinct(Article) %>%
+  nrow()
+
+figure_count <- model_out[[1]] %>%
+  filter(!Figure == "") %>%
+  nrow()
+
+chart_count <- sum(model_out[[1]]$Num_Visuals, na.rm = TRUE)
+
+final_count <- 1
+
+fig_per_paper <- rep(1, paper_count)
+
+assertthat::assert_that(chart_count >= figure_count, msg = "Analysis is reporting more figures than (sub)charts.")
+assertthat::assert_that(figure_count >= paper_count, msg = "Analysis is reporting more papers than figures.")
+assertthat::assert_that(all(fig_per_paper > 0), msg = "Some papers report 0 figures.")
+assertthat::assert_that(final_count <= figure_count, msg = "Figure filtering resulted in more figures than otherwise.")
+```
+
+We used the Neotoma Database Publications Page (https://www.neotomadb.org/references) and Neotoma Database Google Scholar account to identify prospective publications for the content analysis. We captured publications drawing from Neotoma in September 2016, resulting in `r paper_count` unique papers containing `r figure_count` figures and `r chart_count` unique charts, maps, or other visuals within those figures. Of the `r paper_count` papers, `r sum(fig_per_paper == 1)` included at least one figure, an indication of the importance of visualization for paleoecological research. **Small multiples of the same type of visualization were coded as a single graphic, as the data but not design elements were unchanged across graphics**. Following our focus on data visualization, we then reduced the collection to exclude screenshots of software that did not include a chart or map, photographs of flora and fauna, illustrations of paleoecological processes, and textual material that otherwise could be listed as a table. The final sample included `r final_count` static visualizations.
+
+The static visualizations were then supplemented by X mapping websites and Y mobile applications. Our sampling of interactive visualizations was ad hoc, starting with review papers (e.g., Brewer et al. 2012, Uhen et al. 2013, Williams et al. 2018) and appending this list with  the Neotoma API log. Finally, we identified additional visualization applications related to paleoecoinformatics at a Flyover Country all-hands meeting in April 2018. Table 1 lists the subset of interactive visualizations included in our visual content analysis. Short videos of each evaluated interactive visualizations are archived as supplemental materials for provenance.
+
+### Procedure.
+Based on the above review, we developed a X-part coding scheme for the visual content analysis organized by four broad themes in visualization design: data type, representation (visualization technique and visual variables), uncertainty (uncertainty type and visual variables), and interactivity (web and mobile visualizations only). Table 2 defines each code and Figure 1 provides a visual synopsis of these four themes and the assessed codes within each theme. The original coding scheme was applied by two coders for the first 20% of the collection, at which point the coding scheme was refined and applied on the remainder of the collection by one of the two original coders. Codes are reported by frequency and interpreted using visualization and crosstabulation.
+
+**Table 1**. Interactive visualizations considered in the visual content analysis. Bold indicates resources that use the Neotoma API.
+
+Interactive Visualization | Platform   | Coordinating Team                    | Hyperlink
+--------------------------|------------|--------------------------------------|-------------------------------------
+**Neotoma Explorer**      | Open Web   | University of Wisconsin / Penn State | https://apps.neotomadb.org/explorer/
+Macrostrat Map            | Open Web   | University of Wisconsin              | https://macrostrat.org/map/
+PBDB Navigator            | Open Web   | University of Wisconsin              | https://paleobiodb.org/navigator/
+**Flyover Country**       | Mobile App | University of Minnesota              | https://flyovercountry.io/
+Rock’d                    | Mobile App | University of Wisconsin              | https://rockd.org/
+
+
+
+## Results: Current practices in paleoecoinformatics visualization
+
+### Data Types
+
+```{r datatype_data}
+data_types <- c('2_Dimensional',
+                '3_Dimensional',
+                'N_Dimensional',
+                'Temporal',
+                'Tree',
+                'Network')
+
+dt_plots <- model_out[[1]] %>%
+  select(data_types) %>%
+  tidyr::gather() %>%
+  na.omit
+```
+
+```{r datatype_histo}
+ggplot(dt_plots) +
+  geom_histogram(aes(x = key), stat = 'count') +
+  xlab("Data Representation") +
+  ylab("Figure Count") +
+  theme_tufte() +
+  theme(axis.title = element_text(size = 16),
+        axis.text = element_text(size = 10))
+
+```
+
+### Plot Types
+
+```{r plottype_calc}
+plot_types <- c('Article',
+                'Figure',
+                'Visual')
+
+plot_plots <- model_out[[1]] %>%
+  select(plot_types) %>%
+  na.omit
+
+mean_fig <- mean((plot_plots %>%
+  group_by(Article) %>%
+  summarise(n = n()))$n)
+
+mean_plt <- mean((plot_plots %>%
+  group_by(Article) %>%
+  summarise(n = length(unique(Visual))))$n)
+
+poly_plot <- round(sum(stringr::str_detect(plot_plots$Visual, "\\/")) / nrow(plot_plots) * 100, 1)
+
+multi_plot <- round(sum(stringr::str_detect(plot_plots$Visual, "multi")) / nrow(plot_plots) * 100, 1)
+
+```
+
+This analysis provides us with `r length(unique(plot_plots$Visual))` distinct visual representation (plot) types in the literature.  The average paper in the sample contains `r mean_fig` unique figures, with `r mean_plt` unique plot types.
+
+The most common plot types in the dataset are `r paste0(names(sort(table(plot_plots$Visual), decreasing = TRUE))[1:3], collapse = ", ")`.  This represents the emphasis on standard statistical and time-series analysis (likely).
+
+Of the plot types, only `r poly_plot`% of figures combine plot types, representing multiple forms of data using multiple visual representations in a single figure (plot or sub-plot).  Of all figures approximately `r multi_plot`% represent data using multiples of a single visual representation type.  Often, these represent multiple time slices, or multiple taxa at the same time slice.
+
+### Dataset Names (histogram)
+
+```{r dataset_names}
+
+trans_table <- convert_datasets(model_out[[1]],
+                                "Dataset",
+                                filename = "data/output/translation_dataset.csv")
+
+dataset_names <- model_out[[1]] %>%
+  select(Dataset) %>%
+  left_join(trans_table, by = c("Dataset" = "xldataset"))
+```
+
+These are very granular currently.  There are `r length(unique(trans_table$broader))` distinct classes in the grouped list.
+
+```{r datasethistogram}
+
+ggplot(na.omit(dataset_names)) +
+  geom_histogram(aes(x = broader), stat = 'count') +
+  xlab("Dataset Type") +
+  ylab("Figure Count") +
+  theme_tufte() +
+  theme(axis.title = element_text(size = 16),
+        axis.text = element_text(size = 10))
+```
+
+### Tag cloud or text visualization: actual dataset names
+
+```{r}
+dataset_sum <- dataset_names %>%
+  group_by(broader)  %>%
+  summarise(n = n()) %>%
+  filter(n > 1)
+
+ggplot(dataset_sum, aes(label = broader, size = n)) +
+  geom_text_wordcloud() +
+  theme_tufte()
+```
+
+Histogram: Crosstab paleoecological versus unrelated
+
+#### Overlap of space, time, and multivariate with number of graphics that fall in each combination
+
+#### Specific Visualizations: Identify unusual datasets
+
+### Representation
+
+Variable representation is encoded in the images, as part of the presence or absence of a field.
+
+| Enoding  | Meaning
+| --- | ---------------------
+|  +  |  Representation of separate categories rather than numerical data
+| * | Analyses done using different sources of paleoecological data (eg. Pollen; midden; macrofossils)
+| ** |  Multi hue color scheme that uses both color hue and value
+| ~ | Implied elevation data for basemap. Uses color value with dark areas as high elevation and light areas as low elevation
+| \` | Implicit coding but never explicitly stated. (eg land vs water represented by hue)
+
+
+```{r}
+repr_types <- c('Article',
+                'Figure',
+                'Location',
+                'Size',
+                'Shape',
+                'Orientation',
+                'Texture',
+                'Color_Hue',
+                'Color_Value',
+                'Color_Saturation',
+                'Arrangement',
+                'Crispness',
+                'Transparency')
+
+rep_plots <- model_out[[1]] %>%
+  select(repr_types) %>%
+  tidyr::gather("element", "representation", -Article, -Figure) %>%
+  na.omit
+```
+
+#### Static information representation encodings
+
+This is by figure, not normalized by paper.  This may be biased by papers with a large number of figures.
+
+```{r}
+ggplot(rep_plots, aes(x = element)) +
+  geom_histogram(stat = 'count') +
+  theme_tufte() +
+  theme(axis.title = element_text(size = 16),
+        axis.text = element_text(size = 10))
+```
+
+#### Static Information Venn Diagram
+
+```{r}
+
+elem_list <- unique(rep_plots$element) %>%
+  map(function(x) {
+      rep_plots %>%
+        group_by(Article, Figure) %>%
+        summarise(ppr = x %in% element)
+  }) %>%
+  map(function(x) which(x$ppr))
+
+names(elem_list) <- unique(rep_plots$element)
+
+venn.plot <- venn.diagram(
+	x = elem_list[c("Orientation",
+                  "Size",
+                  "Color_Value",
+                  "Color_Hue")],
+	euler.d = TRUE,
+  scaled= TRUE,
+	filename = "Euler_3set_scaled.tiff",
+	cex = 2.5,
+	cat.cex = 2.5,
+	cat.pos = 0
+	)
+
+```
+
+<img src=Euler_3set_scaled.tiff>
+
+
+Histogram: Static techniques colored by typical data type (no small multiple consideration)
+
+Histogram: Summarize static techniques (include an icon for the type of chart) crosstab by small multiples (none, space, time, attribute).
+
+Histogram: Crosstab visual variable by correct use
+
+Histogram: Crosstab visual variable & data type?
+
+Specific Visualizations: Rob’s & Ross’s annotations
+
+### Uncertainty
+
+Histogram: Adjacent/Coincident, Extrinsic/Intrinsic (for coincident) by type of uncertainty
+
+Histogram: Visual Variable by Type of Uncertainty
+
+Specific visualizations: Best practices & unusual examples
+
+### Interactivity
+
+Histogram: Data type
+Histogram: Visualization technique
+Histogram: Uncertainty
+Histogram: Interaction Operators
+Examples
+
+### Novel Techniques
+Petal plots
+Flag plots
+
+
+## Conclusions and Future Directions
+
+·        Innovative Multivariate and Spatiotemporal Representation Techniques
+·        Scaling Interactions to Growing Databases
+·        Supporting Mobile
+·        Harnessing the Potential of Big Data for Multiple Use Cases
+
+## Acknowledgements
+
+This research was funded by the National Science Foundation grants #1550707, and #1550855, and #1550913.
+
+## References

@@ -1,0 +1,500 @@
+xldataset,broader
+% Abundance by taxa,NA
+% abundance in surface pollen,pollen
+% increase in a and correlation,NA
+% land area covered by small lakes,landcover
+% pollen abundance and 14C data compared with insolation data,pollen; climate; chronology
+% pollen abundance by taxa at depths,pollen; depth
+% pollen vs % woody cover; % pollen and woody cover vs lat;lon,pollen; landcover
+% Tree cover,landcover
+% Tree cover by Taxa,landcover
+% woody cover,landcover
+% woody cover for holocene,landcover
+% Woody cover/% pollen over time,pollen; landcover
+A summary of Pliocene and Pleistocene records of global; regional; marine; and terrestrial changes relevant to southwestern Africa,sample sites
+Additive partitioning of species richness for all samples,statistical
+Affinity scores from pollen and midden samples,pollen; middens
+Age comparison of each event,chronology; events
+Age models for different taxa,chronology; taxonomy
+Age-depth graphs with different 14C dating techniques,chronology
+Age-depth model for stratigraphy,chronology; stratigraphy
+Age-depth models,chronology
+AIC values for three models vs focal radius,statistical
+Alternative geographical ranges of taxa from three algorithms and simulations,landcover
+Analyses assessing influence of various environmental factors on the relative abundance og genome combinations,NA
+Analysis of pollen records from lakes; charcoal records,pollen; charcoal
+Analytical regions used in study,sample sites
+Anomalies of mean temperature of the warmest month in comparing two time periods,climate
+Archeological site density and significance of disturbance in pollen records,sample sites; pollen
+Area of sympatry analysis,sample sites
+Aspect map with stratigraphic levels,stratigraphy; sample sites
+Assessment of community composition and abundance of individuals between sites,landcover; sample sites
+Associations between archaelogical; climate; and vegetation records for study region,NA
+Averages of pollen taxa over time,pollen
+Avg time series mean july temp over time in different regions,climate
+B Diversity and spatial turnover in ecological systems,NA
+Bathymetry of Lakes,landcover
+Biogeographical provinces from study,NA
+Biome extent and within-biome variations in LAI,NA
+Biomes,NA
+Biomisation of pollen record,NA
+Biostratigraphy and pollutant profile for sediment core,depth
+Biotic vs climatic velocities; central tendencies of the data,NA
+Body mass changes over time,NA
+Body mass changes vs temperature,NA
+Body mass of mammalian orders over time and space.,NA
+Broad vegetation zones and modeled pollen % from area in map,NA
+Bulk density; %carbon; %nitrogen; C/N ratio; and C accumulation,NA
+C and O values of carbonate component of fossil mammalian tooth enamel,NA
+Calibrated 14C dates for archaeological contexts from the site compared to time of appearance of Hordeum type pollen,NA
+Calibrated age of bone collagen samples,NA
+Calibrated radiocarbon ages vs depth,NA
+Cartoon of habitat,NA
+Centennial bioclimatic data over time,NA
+Central tendencies of  % tree taxa landcover,NA
+Central tendencies of body mass distributions,NA
+Central tendencies of compiled C and O values of carbonate component of tooth enamel data,NA
+Central tendencies of deposits,NA
+Central tendencies of identified ecosystem types shown by box-plots of percentages,NA
+Central tendencies of index of divergence by tolerance for shade and fire,NA
+Central tendencies of offest of O values of enamel carbonate and phosphate from different published studies,NA
+central tendencies of pinus sample size,NA
+Central tendencies of properties of modern threatened and non-threatened species,NA
+Central tendencies of vector components of community climate mismatch deviations,NA
+Central tendencies showing distribution of full-glacial RLAIs for databased reconstructions and three BIOME4 experiments,NA
+Central Tendency of Abundances,NA
+Centralized charcoal concentration values for records,NA
+Change in geographic range sizes for mammalian genera,NA
+Change in log10 area over time for genera,NA
+Change in median and mean deposition times,NA
+Change point diagram for certain taxa,NA
+Changes in 18O,climate
+Changes in climatic conditions over time,NA
+Changes in environmental conditions over time for individual taxa,NA
+Changes in lacustrine Sedimentary d15N,NA
+Charcoal and pollen % for taxa at site,charcoal; pollen
+Charcoal influx diagrams,charcoal
+Chronology for core sample,chronology
+Classified landsat image of site with geologic map; landcover; and fossil sites,landcover; sample sites
+Climate data anamolies from modern analog,climate
+Climate data distribution and regression,climate
+climate data distribution and regression,climate
+Climatic data for site over year,climate
+Climatic niche models based on 14 variables,climate
+CO2 treatments for BIOME4 simulations,climate
+Comparison across climatic; bioclimatic; and vegetational variables of R^2 for six cross-validation experiements,statistical
+Comparison across climatic; bioclimatic; and vegetational variables of RMSE for six cross-validation experiements,statistical
+Comparison of Holocene paleoclimate records,climate
+Comparison of properties of modern threatened and non-threatened species,species distributions
+Comparison of select diagnostic species from site with modern species or known fossil assemblages,taxonomic
+Comparison of trophic groups between faunal assemblages and site fauna,taxonomic
+Composite image of Ethiopia and polygons of surrounding countries,geography
+"Composite pollen % abundance depth core; ""power spectrum""  for composite record",pollen; depth
+Conceptual design of infostructure for dating terrestrial transformation,NA
+Conceptual figure showing antiquity; turnover; and durations of ecosystems based on fossil pollen sequence from sediment core,NA
+Continental-scale quantitative reconstructions for past 15k yr,NA
+Contour plots of ecological events with linear interpolation,NA
+Contrasting ecosystem trajectories from historic through time.,NA
+Core locations,sample sites
+Correlating excavation between two years; depth of sample strata,depth
+Correlation between climate change and predictability of GDMs,climate; species distributions
+Correlation between generic range sizes,species distributions
+Correlation between observed and reconstructed climate models,climate
+correlations between SSTs and three dominant EOFs,climate
+Countries mentioned in text,geography
+Credibility tree resulting from combined beast analysis of taxa,NA
+Current and past land mass; Change in size of St.Paul Island,geography
+Data density over multiple time scales of different databases,statistical
+Data linking radiative forcing; E. Pacific cooling/W. N. American Drought; Increased fire frequency/severity,climate
+Data model comparison: lake status anamolies; simulated P-PE; comparison of lake status anamoly and climate model simulation,climate; statistical
+Data relating to palynological publications over time,statistical
+Data source; year of publication and sites removed,statistical
+Decay function of information associated with pollen sequences over time,statistical; pollen
+Decision structure showing ecological explanations for outcomes,NA
+Decline ages determined using re-analysis dataset,chronology; pollen
+DEM with hilshade of WU fossil localities,sample sites; geography
+Density of archeological sites,NA
+Depth of pollen rise signaling settlement,NA
+Depth profiles of different pollen taxa,NA
+Detrended correspondence analysis,NA
+Development of probability distributions for timing of rise of taxa,NA
+Diagram outlining data and procedures used in species distribution modeling,NA
+Distance-decay plots for biomes,NA
+Distribution of ages for deposition rates of samples,NA
+Distribution of available sites in pollen database,NA
+Distribution of community climate deviations across new world tree communities,NA
+Distribution of paleozoic sedimentary geologic units,NA
+Distribution of pollen abundance by taxa,NA
+Distribution of regression slopes with respect to threshold and # of analog matches allowed for bio/climatic data,NA
+Distribution of RMSE values with respect to threshold and # of analog matches allowed for bio/climatic data,NA
+Diversity indices averaged for each ecoregion,NA
+Diversity indices for NA boreal forest taiga biome,NA
+Dominant forest type,NA
+Ecological niche as estimated by bioclim and environmental distances from two environmental dimensions,NA
+El Nino reconstruction and O18 Pacific Upwelling; Widespread fire in Patagonia and SW USA; Pine stand ages,NA
+Ensemble species distribution models of taxa for present and reconstructed climate conditions.,NA
+Ensembled geographical range of taxa over time,NA
+env. showing # of sites compared to SWI,NA
+Equation of how SDM was created,NA
+Estimated antiquity of ecosystems from across US,NA
+Estimated prediction accuracy vs observed prediction accuracy; across time niche similarity vs observed prediction accuracy,NA
+Estimates of carbon accumulation in peatlands over time,NA
+estimates of cluster membership,NA
+Estimation of the timing of taxa decline at each site,NA
+Evidence of harmonized response to large-scale temp variations,NA
+Example climate diagram for CARY forest plot,NA
+Example of modern weevil distribution,NA
+Examples of origination of modern ecosystems,NA
+Excess lead activity as function of dry peat mass and depth,NA
+Expected spatial distribution of cytoplasm combinations,NA
+Fites of ordinary least-squares regression for evaluated environmental variables,NA
+Floor plan of building,NA
+Fossil and modern occurrences of small mammals,NA
+Fossil Bearing localities on geologic map; aerial image; and DEM,NA
+Fossil images,NA
+Fossil Images,NA
+Fossil localities in Google Earth,NA
+Fossil localities in Google Earth; Starburst visualization providing  more data for each site.,NA
+Fossil pollen % abundance plotted against seasonal temp/precip,NA
+Fossil pollen and modern pollen site locations,NA
+Fossils representative of the parkland veg,NA
+Four transects used to plot latitudinal gradient in tree cover,NA
+Framework for modeling resource paleoscapes,NA
+Fraxinus pollen abundance vs. winter temp/precip,NA
+Gamma density functions describing the probability density function for deposition times,NA
+Generalized depiction of two migrations of mammoth species,NA
+Geographic distribution of certain data,NA
+Geographic location of lakes,NA
+Geographical distribution of sites,NA
+Glacial re-colonization of taxa over time,NA
+Global timeline of human transformation of terrestrial biosphere,NA
+Graphical depiction of expected spatial and temporal scopes of modern; historical; and paleontological ecological perspectives,NA
+Growth in vertebrate paleontology publication output,NA
+harmonic analysis results for F-test,NA
+Heat maps of PLS and pollen data along with predicted sediment pollen for varied taxa,NA
+Heat maps of PLS data; STEPPS composition estimates; and stdev of posterior sample,NA
+Hemlock decline age estimates,NA
+Holocene paleoclimatic records,NA
+How main data objects relate to one another in neotoma package,NA
+Hypothetical graph of ecosystem over time,NA
+Hypothetical patterns of species associations on landscape under certain scenarios,NA
+image,NA
+images,NA
+Images of vegetation,NA
+Incidence plots for the most common taxa within each formation,NA
+Inferred colonization routes,NA
+Information content (Shannon-Weiner Index) of modern pollen samples; locational error; deposition environment,NA
+Insolation; Ice sheet area and rate of change,NA
+Intensity value graphs of red; green; and blue light,NA
+Interpolated ages of each event for multiple methods using different taxa,NA
+Interpolated difference in avg. pollen %,NA
+Interpolated square root of pollen percentage,NA
+July anamolies,NA
+July anamolies over time,NA
+Key inputs and modelling programs used within LRA and MSA,NA
+LAI and RLAI trends for ENA; MID and SEUS (regions),NA
+LAI and RLAI trends for SCAN; WCAN; and AK (regions),NA
+Land carbon storage at different time intervals,NA
+Landcover,NA
+Landscape stability in alternative states (eg. Transition State vs Steady Degraded State),NA
+Latitudinal rates of change of boundaries of reconstructed core distributions,NA
+Likelihood of analogs to modern ecosystems for site,NA
+Likelihood of finding an analog for any sample by choice of threshold,NA
+Likelihood ratio of an analog to grassland against SCD score,NA
+lithology,NA
+Location map of core sites.,NA
+Location of Anderson Pond and LIS maximum extent,NA
+Location of core samples and sites from study and others,NA
+Location of fossil pollen sites in ecoregions,NA
+Location of midden series and pollen distribution,NA
+Location of modern and fossil pollen records,NA
+Location of site,NA
+Location of site within State and City,NA
+Location of sites in pollen database,NA
+Location of sites in regional pollen synthesis and central tendencies of changes,NA
+Locations of sample sites,NA
+Locator map,NA
+locator map for line graphs,NA
+Locator map of study area,NA
+LRA based estimates of local vegetation cover within the NSAP of sites.,NA
+Macrofossil and humification record for cores,NA
+Macrofossil aseemblages graphed on scale of abundance,NA
+Major classes and their relations to one another,NA
+Mammal fossil abundance in Europe,NA
+Mammoth distribution from 14C dated localities over time,NA
+Map localities of geographic landmarks,NA
+Map of archaeological sites,NA
+Map of faunas used in cluster analysis,NA
+Map of study area with pollen sites,NA
+Map of US Gulf Coast,NA
+Maps of pollen sites and best analog biome locations,NA
+Maps of reconstructed LAI and RLAI for pollen and BIOME4,NA
+Maps of reconstructed LAI and RLAI for pollen and BIOME5,NA
+Maps of reconstructed vs observed models,NA
+Marine currents; climate zones and southwestern South African fossil sites,NA
+Marine isotope curve for past 200k years,NA
+Mean July temp anomaly for past 14k years,NA
+Mean July temp anomaly maps 2100-3000 YBP,NA
+Mean July temp of past 3000yrs from multiple studies,NA
+Mean latitudinal distribution of fossil mammal taxa,NA
+Mean values and 95% credible intervals for differential production parameter phi; by taxon for the four considered models,NA
+Median-joining network of certain types for several samples,NA
+Methods for using comunity climate framework,NA
+Micrographs of fossil taxa,NA
+Migration pathways of aquatic taxa,NA
+Model output results and sensitivity analysis,NA
+Modeled exposure of areal continental shelf during Penultimate glacial maximum,NA
+Modeled response of deposition time with age,NA
+modern analogs compatible with past time periods,NA
+Modern and 6ka july temperatures,NA
+Modern and 6ka july temperatures; July anamolies over time,NA
+Modern and fossil pollen samples over elevation,NA
+Modern distribution of pollen taxa,NA
+Modern Hydroclimatology of study area,NA
+Modern pollen/climate model fro analogue,NA
+Modern-day climate reconstructed using site density at 2500 cal/yr BP,NA
+NA,NA
+Natural modes for variability in low-pass filtered data over last century;,NA
+NDVI image with record sites,NA
+Neotoma and LAPD pollen sites,NA
+NMDS plots of each formation separately,NA
+NMDS plots of GCP samples using incidence data and Jaccard coefficient,NA
+non-metric multidimensional scaling of relative abundance,NA
+Normalized percent pollen diagrams for taxa in multiple regions,NA
+Nucleotide diversity; haplotype frequency; and genetic distances.,NA
+Number of fossil pollen sites per region,NA
+Number of sites for presence of certain taxa,NA
+Number of sites per grid cell used in reconstruction method,NA
+Observed climate data and spatial variations in corrleation between observed and reconstructed models,NA
+Observed LAI values vs reconstructed values,NA
+Observed tree cover vs analog pollen technique,NA
+Observed vs modeled pollen abundances - Fraxinus,NA
+Observed vs modeled pollen abundances - Quercus,NA
+Onset of drier conditions versus longitude,NA
+Outlier detection analysis,NA
+Output from chronology model run,NA
+Overlap of pollen sites in climate space,NA
+Overview of leave-one-out test,NA
+Palaeoclimate model,NA
+Palaeoecological record from lakes,NA
+Palaeospecies-area relationship for all mammals at continental scale,NA
+Palaeospecies-area relationship for large mamals at continental scale,NA
+Palaeospecies-area relationship for large mammals per biogeographical province,NA
+Palaeospecies-area relationship for small mammals at continental scale,NA
+Palaeospecies-area relationship for small mammals per biogeographical province,NA
+Paleoecological records showing emergence and turnover of ecosystems,NA
+Paleoenvironmental proxies plotted against time,NA
+Paleoenvironmental reconstruction with present localities and climate.,NA
+Paleohydric balance indices,NA
+PalEON domain including certain sites,sample sites; geography
+Paleontological localities and archaeological sites of study,NA
+Paleovegetational sites showing abruptnes in vegetation change in early Holocene,NA
+Palynofloral diversity,pollen
+Palynological spectra profile,pollen
+"Partial ecological
+distance along the gradient of summer temperature",NA
+Past/present biomes based on midden and pollen samples,NA
+Patterns of attribution of causes of significant taxon pair through time,NA
+PC image of area,NA
+PCA of fossil pollen data,pollen; statistical
+Percent of biome occurrences,landcover
+Percent pollen diagram for site,pollen
+Percentage of biogeography publications,statistical
+Percentage of deviance by GDM over time; proportion of deviance,NA
+Percentage of taxa per time period with changes in area,NA
+Phylogenetic relationships among plant families,genetic
+Picture of site,sample sites
+PIE index for each time bin,statistical
+Pie Symbol Map of relative composition of tree genera of pollen and PLS vegetation from data,landcover
+Pinus establishment in Canada (ages),pollen; chronology
+Plot of GCP samples and taxa,NA
+Plot of posterior stochastically interpolated volatilities,statistical
+Plots of alnus pollen at two sites,pollen
+Plots of modern climatic ranges of vegetation,landcover; climate
+Plots of sites comparing temp and precip,sample sites; climate
+point density of modern pollen data in North America by relative area,pollen; sample sites
+Polar jet stream positions,climate
+Pollen % Abundances,pollen
+Pollen abundance,pollen
+Pollen abundance over time,pollen
+Pollen abundances vs growing degree days,pollen; climate
+Pollen abundances vs soil moisture of different taxa,pollen; climate
+Pollen and charcoal records over time with standard deviation,pollen; charcoal
+Pollen and vegetation proportions of different taxa: pre-settlement and present,pollen; landcover
+Pollen core sites,pollen; sample sites
+Pollen depth diagrams for different taxa,pollen; depth
+Pollen diagram locations and vegetation zones,pollen; landcover; sample sites
+Pollen diagrams for sediment profiles from Anderson Pond; 1976 and 2007,pollen; depth; chronology
+Pollen percentage data with confidence level data,pollen
+Pollen percentages for different taxa,pollen
+Pollen percentages from midden,pollen; middens
+Pollen productivity estimates versus sets of previously published estimates from different geographical regions,pollen
+Pollen proportion vs vegetation proportion,pollen; landcover
+Pollen proportions plotted against local vegetation proportions or local vegetation proportion scaled by pollen production factor phiK for variable power-law kernel model,pollen; landcover
+Pollen proportions plotted against local vegetation proportions or model-predicted pollen for the variable PLK model.,pollen; landcover
+Pollen sample locations,pollen; sample sites
+Pollen sample transect percentages; Location of samples in cave diagram,pollen; sample sites
+Pollen samples plotted with precip vs temp along with climate space and biomes,pollen; climate; landcover
+Pollen sequence distribution,NA
+Pollen Site Frequency,NA
+Pollen site locations,sample sites
+Pollen site samples; vegetation formations; and biomes of modern day and LGM,NA
+Pollen sites,NA
+Post-glacial re-colonization of taxa over time,NA
+Potential fossil records over time with area size,NA
+Precip,climate
+Predicted rate of compositional turnover across space in NA vegetation communities,NA
+Predictive ability of GDMs when calibrated using data within one set of times,NA
+Preliminary pattern of succession of a fauna,NA
+Presence and abssence of pollen with ice cover,NA
+Presence/absence of taxa fossils at LGM assemblages,NA
+Principal component biplots of regional anomalies of july temperature,climate; statistical
+Prior and posterior distributions of volatility parameters,statistical
+Procedure for quantitative reconstructions.,conceptual
+Process of predicting species distribution,conceptual
+Process of reducing submitted questions,conceptual
+Proportion of taxon pairs from 21k to present; attribution of causes of significantly segregated pairs,NA
+Proxy water-table depth reconstructions based on amoeba assemblages and pollen records,climate; pollen; testate amoebae
+Proxy-climate records of past 2000yrs compared to instrument-derived records of 20th century,climate
+Quality of sites,NA
+Radiocarbon calibration curve for estimates of decline age at two sites,chronology; events
+Radiocarbon calibration curve for time period around hemlock decline,chronology; events
+Range of dimate dissimilarity and model predictions for different time periods,NA
+Range shift of taxa through last glacial/interglacial cycle,NA
+Rank-order abundance ranks across time bins for each taxon,NA
+Ratios; bulk density and LORCA for cores vs age,NA
+Raup-Crick analysis of fauna.,NA
+Reconstructed aboveground carbon for regions over time,NA
+Reconstructed climate models - 21ka,NA
+Reconstructed climate models - 6ka,NA
+Reconstructed climate models from different data and methods,NA
+Reconstructed distribution of broad leaved tree cover for different time periods,NA
+Reconstructed distribution of needle leaved tree cover for different time periods,NA
+Reconstructed distribution of woody cover for different time periods,NA
+Reconstructed vs simulated RLAIs,NA
+Reconstruction of taxa colonization pathways inferred from pollen records,pollen; geography
+Regional averages of mean temperature of warmest month anomalies over time,climate
+Regional mean July temp time series from pollen diagrams,climate; pollen
+Regional synthesis with composite pollen-based indices,NA
+Regression models for pinus abundance vs latitude; Jan. Temp,pollen; climate; geography
+Relationship between biotic and climate velocities over time and space,landcover; climate
+Relationships between arboreal pollen percentages in sediment samples,pollen
+Relative abundance fluctuations of most common small mammals at site,faunal
+Relative abundance of ground squirrels WRT voles and lemmings,faunal
+Relative abundances for certain taxa,NA
+Relative abundances of each taxon through time,NA
+Representations of late Pleistocene and modern plant associations as biomes and multitaxon isopoll maps,NA
+Research orientated representation of database structure,conceptual
+Response surfaces depicting the relative abundance of pollen from modern samples,pollen; statistical
+RMSE for linear regressions of observed versus analog-reconstructed estimates (TSum; TWin; PSum; PWin; %Woody),climate; statistical
+Sample locations and size and desert regions,sample sites; geography
+Sample Locations within W. Amazonia,sample sites
+Sample sites in vegetation cover polygons,sample sites
+Sampling scheme used in study,NA
+SCD analog measure and LGM affinity score ratio,NA
+SCD between adjacent time intervals (veg change),NA
+SCD between pollen assemblages in sediment core and modern grassland assemblages,NA
+SCD distribution for modern sample sites,NA
+SCD distribution of pollen sites,NA
+SCD from 6ka,NA
+SCD values for top 5 analogs for different biomes,NA
+Schematic cross-section of entrance and talus of cave,NA
+Schematic diagram of neural network with single neuron,NA
+Schematics of three types of realized climatic niche responses,climate; statistical
+Scores of pollen assemblages PCA,pollen; statistical
+Screenshot of prototype of mapping interface,NA
+Several stages in evolution of reconstructed july temp based on different papers,NA
+Shifting position and steepness of northern forest-tundra ecotone for multiple regions,landcover
+Shifts in prairie-forest ecotone during Holocene,landcover
+Significant events that may have impacted C storage,events
+Significant predictors of compositional dissimilarity at each time period,statistical
+Similarities between observed and predicted pollen abundances,pollen; statistical
+Similarities between past and present climatic niches for different taxa,climate; taxa
+Simple decline scenario and pre-decline fluctuation scenario,NA
+Simulated time series of mean annual temperature; precip; and sunshine for all regions,climate
+Simulations using site records,NA
+Site distribution with ice sheet,sample sites
+site locations,sample sites
+Site locations,sample sites
+Site Locations,sample sites
+Site locations and sample type,sample sites
+Site locations by reconstruction method in geographic space,sample sites
+Site locations by reconstruction method in vegetation space,sample sites
+Sites from databases,sample sites
+Sites in pollen databases,sample sites
+Skeletons of mammoths and mastodon,NA
+Slope map with fossil localities,sample sites; geography
+Snippet of USGS Quadrangle Map,geography
+Soil charcoal distributions and phtyolith % in soil cores,sample sites; phytolith; charcoal
+Spatial and temporal dataset construction of temporal turnover and fitted functions for Late Quaternary dataset,NA
+Spatial and temporal distribution of fossil pollen samples,sample sites
+spatial autocorrelogram for pollen types,pollen; statistical
+Spatial data models of butternut FIA data,NA
+Spatial distribution of deposits,NA
+Spatial distribution of deposits from different times,NA
+Spatial distribution of taxa,NA
+Spatial distribution of temperature residuals;  distribution of Moran's I,NA
+Spatial distribution of the decline of a taxa,NA
+Spatial patterns and predictors of climate volume and mismatch.,NA
+Spatial Proximity analysis over hillshade with fossil localities,NA
+Spatial; temporal; and taxonomic patterns of no-analog communities in NA,NA
+Stacked frequency curve for probability values,NA
+Statistics of variables in map,NA
+Statistics with each taxa discussed in paper,NA
+STEPPS 90% capture radius versus measured falling speeds,NA
+Strat columns of localites,NA
+Strat plots for site for multiple taxa,NA
+Stratigraphic occurrences of five species of snail,NA
+study area location,geography
+Study extent in USA,geography
+Study region with pollen/charcoal record locations and 14C date sites,geography; sample sites
+Study site; coring site,sample sites
+Suggested trajectory of land carbon storage,NA
+Summary diagrams of pollen and soils,pollen
+Summary of climatic and biotic components of the explanatory models for plant diversity,NA
+Summary of community climate framework,NA
+Summed probability distribution curves,NA
+Summed probability distribution curves for fossil and archaeological samples,NA
+Summed probablities for calibration of hemlock age determination,NA
+Summer temperatures and predicted dissimilarity,NA
+Surface approximation of probability of occurence for certain taxa,NA
+Surface profile graph,NA
+Surficial materials  and study sites,NA
+Taxa distribution and fossil sites,NA
+taxa dominant zones,NA
+Taxonomic richness in pollen record comparison and Age vs insolation measurements,pollen; climate; chronology
+Temperature and Precip represented for two months in a year.,climate
+Temperature and precipitation data for several time periods in N. America,climate
+Temperature fluctuations over time period,climate
+Temperature; drought; and vegetation probability depictions,climate; landcover
+Temporal associations between archeological data and pollen taxa,NA
+Temporal distribution of fossil records in N. America,NA
+Temporal distribution of pollen samples,NA
+Temporal frequency distributions for fossil and archaeological samples,NA
+Temporal relationship between taxa % at each site,NA
+Testate amoebae from core,testate amoebae
+Testate amoebae-inferred water-table depths,testate amoebae
+The proportion of deposited (or accumulated) pollen plotted as a function of radius for each of the modeled taxa and for each of the four considered models,pollen; landcover
+Threatened species and their representation in fossil record,taxa
+Three main components of biodiversity and relationships to various disciplines,conceptual
+Time of first arrival of certain taxa,taxa
+Timing of fire onset; increases and decreases in certain taxa,climate; charcoal; taxa
+Timing of onset drier conditions and how rapid those changes occurred,climate
+timing of onset to drier conditions and rapid responses to drying,climate
+Topics of paleoecoinformatics,conceptual
+Tree Diagram of species clusters,statistical
+TSD for regional july temperature anamolies,climate
+Uncertainty Map of taxa,statistical; taxa
+Validation of hydrologic and climatic sensitivity,climate
+Values of SCD for all pollen spectra and # of sites to compute regional curves,pollen; statistical
+Variation in annual precipitation,climate
+Various climatic measurements,climate
+vector map showing best modern analog,statistical; sample sites; geography
+Vegetation and Biome change,landcover
+vegetation and land cover,landcover
+Vegetation cover/biome,landcover
+Vegetation proportion vs pollen proportion (same as last but inverted),landcover; pollen
+Visualization of approach to model core distributions. Climate data; pollen abundances,climate; pollen
+Visualization of the processes affecting relative amts of pollen of different taxa in sediment core,conceptual
+Water table depth; fire; and dominant pollen changes,pollen; climate; charcoal
+Woolly mammoth extinction timing,chronology; faunal
