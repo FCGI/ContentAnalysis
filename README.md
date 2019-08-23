@@ -28,6 +28,8 @@ All products of the Throughput Annotation Project are licensed under an [MIT Lic
 
 This project is intended to function as an RMarkdown file that will render the paper manuscript for publication.  To faciliate editing and the use of continuous integration tools we use a `Makefile` as well as a bash script that will render the RMarkdown file to an HTML document, suitable for viewing in web applications.  The ultimate `publication` branch of this repository will be used for rendering to PDF/DOCX format for submission to publisher.
 
+You can find an html rendering of the data analysis at [https://fcgi.github.io/ContentAnalysis/paleomultivar.html]().
+
 ### Render RMarkdown to `html`
 
 To render the RMarkdown document use the Makefile included with this respository:
