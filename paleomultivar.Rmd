@@ -36,11 +36,12 @@ source('R/load_packages.R', echo = FALSE)
  
 model_out <- convert_excel('data/excel/Neotoma_Analysis.xlsx',
                            sheets = list(
-                             list(sheet = 'Representation_DataType',
+                              list(sheet = 'Representation_DataType',
                                   range = 'A2:Z706'),
                              list(sheet = 'Figure_Representation',
                                   range = 'A2:N628'),
-                             list(sheet = 'Visualization Representation')))
+                             list(sheet = 'Visualization Representation'
+                                  )))
 
 refs <- pull_references(model_out[[1]])
 
@@ -58,6 +59,8 @@ Visualization is a critical method for distilling meaning from complex data, dra
 
 ### What is unique to paleoecology?
 We contribute to visualization research in ecological informatics through a case study in paleoecology using the Neotoma database. Paleoecology describes the reconstruction of past ecosystems and environments using fossil and seed records, lake sediment and ice cores, tree rings, etc., to understand historic and current ecological processes as well as predict and intervene upon potential future conditions (Willis & Birks 2006, Jackson & Hobbs 2009). Launched in 2009, the Neotoma database is an open access, community-curated data resource providing site level paleoecological records spanning the Quaternary and Pliocene (Williams et al. 2018). Neotoma paleoecological data present a useful case study for assessing current trends in big data visualization broadly because its constituent data sources altogether exhibit many characteristics and complexities present only in part in other domain data repositories (see Brewer et al. 2012 for a discussion). First, paleoecological data are spatiotemporal, collected at specific geographic sites and including prehistoric accounts spanning tens of thousands of years. Second, paleoecological data are multivariate, containing separate facets for different flora and fauna taxa and associated environmental attribute proxies. Finally, paleoecological data are uncertain due to sparse and ad hoc community sampling, limitations in contemporary collection and analysis techniques, and inherent ambiguity in prehistoric ecosystems that cannot be observed directly. Thus, trends, gaps, and opportunities identified from critical evaluation of paleoecological visualization are potentially transferable to many other visualization contexts (Sedlmair et al. 2012, Roth et al. 2017).
+
+@simon
 
 ### Road Map
 Specifically, we completed a visual content analysis of 706 charts, maps, and other visualizations included pin publications from Neotoma contributed projects in order to identify gaps in current solutions based on existing visualization design tenets. We also coded N web visualizations and mobile apps that draw on the Neotoma API to seek opportunities for innovative visualization. The next section reviews visualization tenets for ecological informatics, drawing from both established and emerging design guidance in visualization and related fields. We then describe our approach to analyze the collected visuals by four dimensions: data type, representation, uncertainty, and interactivity (web and mobile only). We present results and discussion in the fourth section, starting first with static graphics in scientific publications and comparing these practices to the reviewed web and mobile visualizations.  We conclude by identifying X future directions for visualization of (paleo)ecological data. The results of this study are relevant to ecological informatics and paleoecology specifically, as well as the increasingly interrelated domains of data science, cartography, and Earth science.
